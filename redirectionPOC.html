@@ -10,6 +10,7 @@
     function redirectToTeams() {
       var userAgent = navigator.userAgent.toLowerCase();
       if(/ipad|iphone|ipod|mac os/.test(userAgent)){
+        window.location.href.replace('msteams:');
         if (window.location.href == 'msteams:') {
           window.location.href = 'msteams://teams.microsoft.com/l/chat/0/0';
         } else {
