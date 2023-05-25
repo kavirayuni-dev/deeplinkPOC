@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teams Channel Redirection</title>
+</head>
+<body>
+  <button onclick="redirectToTeams()">Open Teams Channel</button>
+
+  <script>
+    function redirectToTeams() {
+      var userAgent = navigator.userAgent.toLowerCase();
+      
+        if (window.location.href == 'msteams:') {
+          window.location.href = 'msteams://teams.microsoft.com/l/chat/0/0';
+        } else {
+          // Redirect to App Store
+          window.location.href = 'https://itunes.apple.com/us/app/microsoft-teams/id1113153706?mt=8';
+        }
+       else {
+        // Redirect to Teams web version
+        window.location.href = 'https://teams.microsoft.com/l/chat/0/0';
+      }
+    }
+  </script>
+</body>
+</html>
