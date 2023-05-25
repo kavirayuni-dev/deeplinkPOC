@@ -11,12 +11,12 @@
       var userAgent = navigator.userAgent.toLowerCase();
       if(/ipad|iphone|ipod|mac os/.test(userAgent)){
         window.location.href.replace('msteams:');
-        if (window.location.href == 'msteams:') {
-          window.location.href = 'msteams://teams.microsoft.com/l/chat/0/0';
-        } else {
+        //if (window.location.href == 'msteams:') {
+         // window.location.href = 'msteams://teams.microsoft.com/l/chat/0/0';
+        //} else {
           // Redirect to App Store
           window.location.href = 'https://itunes.apple.com/us/app/microsoft-teams/id1113153706?mt=8';
-        }
+        //}
       }
        else {
         // Redirect to Teams web version
